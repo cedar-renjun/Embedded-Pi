@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<Device>
+    <Name>W25X16, W25X16A, W25X32, W25X64</Name>
+    <Description>
+    	  W25Xxx Serial Memories with SPI interface provide a storage solution for systems with limited space,pins,power.
+    </Description>
+    <Manufacturer>Winbond</Manufacturer>
+    
+    <Category>Memory</Category>
+    <SubCategory>Flash</SubCategory>
+    
+    <KeyWord>W25X16, W25X32, W25X64, Flash, SPI, CoX</KeyWord>
+    
+    <Communication>
+        <Interface>SPI</Interface>
+    </Communication>
+    
+    <WebPage>http://www.winbond.com/hq/enu/ProductAndSales/ProductLines/FlashMemory/SerialFlash/W25X16.htm</WebPage>
+    <Datasheet>http://www.winbond.com/NR/rdonlyres/40F20871-0F35-48B6-9034-D116436679AE/0/W25X16_W25X16A_W25X32_W25X64.pdf</Datasheet>
+    
+    <Doc>$Device_ROOT$\doc\</Doc>
+</Device>

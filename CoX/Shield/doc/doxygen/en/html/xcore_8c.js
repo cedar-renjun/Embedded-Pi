@@ -1,0 +1,27 @@
+var xcore_8c =
+[
+    [ "IntDefaultHandler", "xcore_8c.html#a6166a9c25468acb44ad84dd40e6734b9", null ],
+    [ "__attribute__", "xcore_8c.html#a76ebedff0ec2a6b10c774b70c3daff6f", null ],
+    [ "xIntMasterEnable", "xcore_8c.html#gaf2b9c6f670192c4df5de28297355c2eb", null ],
+    [ "xIntMasterDisable", "xcore_8c.html#gae9a7fa12bf009d0ac3241de80c5df6bb", null ],
+    [ "xIntPrioritySet", "xcore_8c.html#ga67e58bc719157e441177569138db10d4", null ],
+    [ "xIntPriorityGet", "xcore_8c.html#ga782db464d706aee668d894fe51197078", null ],
+    [ "xIntEnable", "xcore_8c.html#ga1d1c076c748565e109f8abad14dda0bf", null ],
+    [ "xIntDisable", "xcore_8c.html#gaaa996a649e5b0a10ea9aed9bb6986d0c", null ],
+    [ "xIntPendSet", "xcore_8c.html#gad7b028e054a41263b0945e46ea97415f", null ],
+    [ "xIntPendClear", "xcore_8c.html#gad5e858ee2cea6f65263fd50308ca67c3", null ],
+    [ "xIntPriorityMaskSet", "xcore_8c.html#gaa8d1ed4449469fc9f6121d9ce93b91b1", null ],
+    [ "xIntPriorityMaskGet", "xcore_8c.html#gaa543ffff28e0df6144ad18f18ecfe4d0", null ],
+    [ "xSysTickEnable", "xcore_8c.html#ga9245e736441bf588b678d949836ee309", null ],
+    [ "xSysTickDisable", "xcore_8c.html#gac735bc501b0d98bc72e54c48b11abe6c", null ],
+    [ "xSysTickIntEnable", "xcore_8c.html#ga451b1be33945001b444a794b5e768001", null ],
+    [ "xSysTickIntDisable", "xcore_8c.html#gae8928f8adf9da824ebb73cccbf967957", null ],
+    [ "xSysTickPeriodSet", "xcore_8c.html#ga7e7913a5c7fffb4ea89409db5d404c8d", null ],
+    [ "xSysTickPeriodGet", "xcore_8c.html#gaed9a3db4e07f5b776d0d928671175a14", null ],
+    [ "xSysTickValueGet", "xcore_8c.html#ga1530cdab22f7897ec8d91b0e60fa7a0a", null ],
+    [ "xSysTickPendSet", "xcore_8c.html#gac6696d2f02c752604fa93eb6d8c042d1", null ],
+    [ "xSysTickPendClr", "xcore_8c.html#ga3d2e9ee4cd2ea291a1b2004e6c5c0167", null ],
+    [ "xPendSVPendSet", "xcore_8c.html#gacce44dcb7c40a1db6a7a659a09c52811", null ],
+    [ "xPendSVPendClr", "xcore_8c.html#gaf91839357a8afcf0506bcdb5ed23efad", null ],
+    [ "g_pulRegs", "xcore_8c.html#a5730d6c472b081b9b041de094290922d", null ]
+];

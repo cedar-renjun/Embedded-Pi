@@ -1,0 +1,25 @@
+var group___sensor___shield___exported___i_os =
+[
+    [ "SENSOR_SHIELD_O0", "group___sensor___shield___exported___i_os.html#ga10206c22e9052e1ac0a7c2b02ebd6629", null ],
+    [ "SENSOR_SHIELD_O1", "group___sensor___shield___exported___i_os.html#ga111df82aa5981169e64d26532ee266b9", null ],
+    [ "SENSOR_SHIELD_O2", "group___sensor___shield___exported___i_os.html#ga7a0d636708453b27d353674c287e1e10", null ],
+    [ "SENSOR_SHIELD_O3", "group___sensor___shield___exported___i_os.html#gab1e56725019483354c392405c3194ee7", null ],
+    [ "SENSOR_SHIELD_O4", "group___sensor___shield___exported___i_os.html#ga1ad90cee5c81b786204ea1adb3387bbf", null ],
+    [ "SENSOR_SHIELD_O5", "group___sensor___shield___exported___i_os.html#ga45be6cc201ce57957d5fd53a495fcd20", null ],
+    [ "SENSOR_SHIELD_I0", "group___sensor___shield___exported___i_os.html#ga861115bff96cd1c54cca642f6b4d41df", null ],
+    [ "SENSOR_SHIELD_I1", "group___sensor___shield___exported___i_os.html#ga28bb29cd1cb32946f867c78e2970d64a", null ],
+    [ "SENSOR_SHIELD_I2", "group___sensor___shield___exported___i_os.html#gad48df7f4f34f911f96a2d61bd3a5cf57", null ],
+    [ "SENSOR_SHIELD_I3", "group___sensor___shield___exported___i_os.html#ga3f4ad2c39e7f3f2721f61cdc5ca42edd", null ],
+    [ "SENSOR_SHIELD_I4", "group___sensor___shield___exported___i_os.html#ga8bfbc5a3d9ee2caa548c9310bf1cdcba", null ],
+    [ "SENSOR_SHIELD_I5", "group___sensor___shield___exported___i_os.html#ga4c2d7b919fd512dd0c77d8005606a755", null ],
+    [ "SENSOR_SHIELD_AI0", "group___sensor___shield___exported___i_os.html#ga3727709cafc1246f1463d870509db6b0", null ],
+    [ "SENSOR_SHIELD_AI1", "group___sensor___shield___exported___i_os.html#ga114e685f234c450a9c54ddd7fdaf754b", null ],
+    [ "SENSOR_SHIELD_AI2", "group___sensor___shield___exported___i_os.html#ga24a9b979c0c2a02ac213319da105ae2b", null ],
+    [ "SENSOR_SHIELD_AI3", "group___sensor___shield___exported___i_os.html#ga133fbe46c60e3999ec35d44bf0635d2a", null ],
+    [ "SENSOR_SHIELD_AI4", "group___sensor___shield___exported___i_os.html#ga948f66797dc8736d7ea1fb7268f7b0d1", null ],
+    [ "SENSOR_SHIELD_AI5", "group___sensor___shield___exported___i_os.html#ga35bf9ecc3d3dbfbd14bae612c373a535", null ],
+    [ "SENSOR_SHIELD_TWI_SDA", "group___sensor___shield___exported___i_os.html#ga083fcf56e9d736d64b9b1ecf8ddf6149", null ],
+    [ "SENSOR_SHIELD_TWI_SCK", "group___sensor___shield___exported___i_os.html#gad175ebb853370c371f3ed4e9d9a7bf35", null ],
+    [ "SENSOR_SHIELD_TX", "group___sensor___shield___exported___i_os.html#ga4ca800916a0d54edad44d093ab40b2e0", null ],
+    [ "SENSOR_SHIELD_RX", "group___sensor___shield___exported___i_os.html#gaef843cbcf18b7fbdb0c803814ebf7104", null ]
+];

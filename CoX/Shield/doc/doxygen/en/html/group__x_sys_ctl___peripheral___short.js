@@ -1,0 +1,26 @@
+var group__x_sys_ctl___peripheral___short =
+[
+    [ "ADC0", "group__x_sys_ctl___peripheral___short.html#ga0d2ea0f4a8dd17bf08e69d05deacbcb5", null ],
+    [ "PWMB", "group__x_sys_ctl___peripheral___short.html#ga8a1698a336f593db58ab114e61fa9c29", null ],
+    [ "PWMA", "group__x_sys_ctl___peripheral___short.html#ga3ea32653b4399f65cd8a9fbd3856a15d", null ],
+    [ "FRQDIV", "group__x_sys_ctl___peripheral___short.html#ga3873a0eb90b88990637459ce6b64723b", null ],
+    [ "I2S0", "group__x_sys_ctl___peripheral___short.html#gadb0838291c90975e284e5f6a112f5877", null ],
+    [ "TIMER0", "group__x_sys_ctl___peripheral___short.html#gaf1b746ba5ab7d0ab657156ebda0f290c", null ],
+    [ "TIMER1", "group__x_sys_ctl___peripheral___short.html#ga63bf4f24c85f26e838f55701a5e69831", null ],
+    [ "TIMER2", "group__x_sys_ctl___peripheral___short.html#gaca904d0e4ebb6d643c349f7f05613995", null ],
+    [ "TIMER3", "group__x_sys_ctl___peripheral___short.html#ga6d4063b72c434f0e7afa8eb2a0e7ee00", null ],
+    [ "UART0", "group__x_sys_ctl___peripheral___short.html#ga0508661f121639ffdee7de2353a0def2", null ],
+    [ "UART1", "group__x_sys_ctl___peripheral___short.html#ga8d69bf04d07af4fbbab5a8bd291f65ff", null ],
+    [ "UART2", "group__x_sys_ctl___peripheral___short.html#ga7f6bd6eb89ae2eeae97af4207ebe3cde", null ],
+    [ "CAN0", "group__x_sys_ctl___peripheral___short.html#ga8882ee5d18ec64b8193396ec6bc66fe5", null ],
+    [ "WDT0", "group__x_sys_ctl___peripheral___short.html#ga09d9e73511b524c49ca77eec8f988678", null ],
+    [ "INT", "group__x_sys_ctl___peripheral___short.html#gafeeffe52c8fd59db7c61cf8b02042dbf", null ],
+    [ "HCLK", "group__x_sys_ctl___peripheral___short.html#ga585a47262f34872b6f2a3920c5555ea5", null ],
+    [ "HCLK_2048", "group__x_sys_ctl___peripheral___short.html#gab38390565f236433dbdadcee98550268", null ],
+    [ "EXTSL", "group__x_sys_ctl___peripheral___short.html#gac5023fe0f1fdb7513f25dd8975c36864", null ],
+    [ "INTSL", "group__x_sys_ctl___peripheral___short.html#gaec0d7fe554e456ec7c6a46c5dc8ab110", null ],
+    [ "MAIN", "group__x_sys_ctl___peripheral___short.html#ga34b04bd23b07b485921a728ad0805ac4", null ],
+    [ "PLL", "group__x_sys_ctl___peripheral___short.html#ga4ca8c7fe9892e150e5422bf40ec7fda2", null ],
+    [ "PLL_2", "group__x_sys_ctl___peripheral___short.html#ga36eb828c8839fd5475a1bc2d59d2384b", null ],
+    [ "EXTTRG", "group__x_sys_ctl___peripheral___short.html#ga98a71d975eef2e479435f8941037e901", null ]
+];

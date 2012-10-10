@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['can0',['CAN0',['../group__x_sys_ctl___peripheral___short.html#ga8882ee5d18ec64b8193396ec6bc66fe5',1,'xsysctl.h']]],
+  ['can0rx',['CAN0RX',['../group__x_g_p_i_o___peripheral___pin.html#gae1d26555238cf2ac716e3eb8e570b2a4',1,'xgpio.h']]],
+  ['can0tx',['CAN0TX',['../group__x_g_p_i_o___peripheral___pin.html#ga9d00c86f0496f7ef7b4c24e72806851e',1,'xgpio.h']]],
+  ['can1rx',['CAN1RX',['../group__x_g_p_i_o___peripheral___pin.html#gac8eda391d8f6ca0772750c0de429e7f7',1,'xgpio.h']]],
+  ['can1tx',['CAN1TX',['../group__x_g_p_i_o___peripheral___pin.html#gaeea1f36407999f4c30c651ab7ad5a729',1,'xgpio.h']]],
+  ['changelog_5fen_2etxt',['changelog_en.txt',['../changelog__en_8txt.html',1,'']]],
+  ['cmp0n',['CMP0N',['../group__x_g_p_i_o___peripheral___pin.html#gaae48dd0d8aee0c6076a4b036b9afe0c7',1,'xgpio.h']]],
+  ['cmp0o',['CMP0O',['../group__x_g_p_i_o___peripheral___pin.html#ga64dc81d8aeedb260c70474260d960d63',1,'xgpio.h']]],
+  ['cmp0p',['CMP0P',['../group__x_g_p_i_o___peripheral___pin.html#gae9bfdc87372e1ae7bc8f8122aaa2fc20',1,'xgpio.h']]],
+  ['cmp1n',['CMP1N',['../group__x_g_p_i_o___peripheral___pin.html#ga29c938ad19dc69d7f378633591e3ab4d',1,'xgpio.h']]],
+  ['cmp1o',['CMP1O',['../group__x_g_p_i_o___peripheral___pin.html#ga3acbbd568ed844f61960644232fb81cc',1,'xgpio.h']]],
+  ['cmp1p',['CMP1P',['../group__x_g_p_i_o___peripheral___pin.html#ga11dee695c2060bc2b103f97ea51ddf95',1,'xgpio.h']]],
+  ['copyright_20statement',['Copyright Statement',['../copyleft.html',1,'']]],
+  ['copyleft_5fen_2etxt',['copyleft_en.txt',['../copyleft__en_8txt.html',1,'']]],
+  ['cox_5fdriver_5flib',['CoX_Driver_Lib',['../group___co_x___driver___lib.html',1,'']]],
+  ['cox_20peripheral_20library',['CoX Peripheral Library',['../group___co_x___peripheral___lib.html',1,'']]],
+  ['cox_5fperipheral_5flib_5fen_2etxt',['cox_peripheral_lib_en.txt',['../cox__peripheral__lib__en_8txt.html',1,'']]],
+  ['cox_20shield_20library',['CoX Shield Library',['../group___co_x___shield___lib.html',1,'']]],
+  ['character_20font',['Character Font',['../group___h_d44780___character___font.html',1,'']]],
+  ['cursor_20move_20direction',['Cursor Move Direction',['../group___h_d44780___entry___mode.html',1,'']]],
+  ['cursor_20or_20display_20shift',['Cursor or Display Shift',['../group___h_d44780___instruction___c_d_s.html',1,'']]],
+  ['coocox_2fcox',['CooCox/CoX',['../index.html',1,'']]]
+];
