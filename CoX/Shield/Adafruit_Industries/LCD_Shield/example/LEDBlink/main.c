@@ -1,57 +1,63 @@
-#include "coshining.h"
+#include "cookie.h"
 #include "xgpio.h"
 #include "xadc.h"
 #include "xuart.h"
 #include "xsysctl.h"
 #include "LCDShield.h"
 
+#define SHIELD_UART             xSYSCTL_PERIPH_UART1
+#define SHIELD_UART_CLK         xSYSCTL_UART0_MAIN
+
+#define SHIELD_ADC              xSYSCTL_PERIPH_ADC1
+#define SHIELD_ADC_BASE         xADC1_BASE
+
 const char cKey[5][6] = {"right","up","dowm","left","select"};
 
 int main()
 {
     int key;
-	
-    xSysCtlClockSet(12000000, xSYSCTL_OSC_MAIN | xSYSCTL_XTAL_12MHZ);
+
+    xSysCtlClockSet(72000000, xSYSCTL_OSC_MAIN | xSYSCTL_XTAL_8MHZ);
     xSysCtlDelay(1000);
-	
-    xSysCtlPeripheralEnable(xSYSCTL_PERIPH_UART0);	
-    xSysCtlPeripheralEnable(xGPIOSPinToPeripheralId(sD13));   
-    xSysCtlPeripheralClockSourceSet(xSYSCTL_UART0_MAIN, 1);
-	
+
+    xSysCtlPeripheralEnable(SHIELD_UART);
+    xSysCtlPeripheralEnable(xGPIOSPinToPeripheralId(sD13));
+    xSysCtlPeripheralClockSourceSet(SHIELD_UART_CLK, 1);
+
     LCDShieldInit();
-	
+
     //
     // Enable Peripheral SPI0
     //
-    xSysCtlPeripheralEnable(SYSCTL_PERIPH_ADC);
-	  
-    xSPinTypeADC(ADC0, sA0);
-	  
+    xSysCtlPeripheralEnable(SHIELD_ADC);
+
+    xSPinTypeADC(ADC1, sA0);
+
     //
     // ADC Channel0 convert once, Software tirgger.
     //
-    xADCConfigure(xADC0_BASE, xADC_MODE_SCAN_CONTINUOUS, ADC_TRIGGER_PROCESSOR);  
-	  
+    xADCConfigure(SHIELD_ADC_BASE, xADC_MODE_SCAN_CONTINUOUS, ADC_TRIGGER_PROCESSOR);
+
     //
     // Enable the channel0
     //
-    xADCStepConfigure(xADC0_BASE, 0, xADC_CTL_CH0); 
-    
+    xADCStepConfigure(SHIELD_ADC_BASE, 0, xADC_CTL_CH0);
+
     //
     // Enable the adc
     //
-    xADCEnable(xADC0_BASE);
-		
+    xADCEnable(SHIELD_ADC_BASE);
+
     //
     // start ADC convert
     //
-    xADCProcessorTrigger( xADC0_BASE );
-		
+    xADCProcessorTrigger(SHIELD_ADC_BASE);
+
     LCDShieldLocationSet(0, 0);
-    LCDShieldDisplayString("Hello Nuvoton!");
+    LCDShieldDisplayString("Hello Cookie!");
     LCDShieldLocationSet(0, 1);
     LCDShieldDisplayString("Hello CooCox! ");
-		
+
     xSysCtlDelay(1000000);
 
     while(1)

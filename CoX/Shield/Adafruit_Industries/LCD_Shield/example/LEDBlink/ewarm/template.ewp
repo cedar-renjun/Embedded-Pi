@@ -12,7 +12,7 @@
       <name>General</name>
       <archiveVersion>3</archiveVersion>
       <data>
-        <version>17</version>
+        <version>21</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -29,8 +29,8 @@
         </option>
         <option>
           <name>Variant</name>
-          <version>16</version>
-          <state>34</state>
+          <version>20</version>
+          <state>38</state>
         </option>
         <option>
           <name>GEndianMode</name>
@@ -38,8 +38,8 @@
         </option>
         <option>
           <name>Input variant</name>
-          <version>1</version>
-          <state>0</state>
+          <version>3</version>
+          <state>1</state>
         </option>
         <option>
           <name>Input description</name>
@@ -47,8 +47,8 @@
         </option>
         <option>
           <name>Output variant</name>
-          <version>0</version>
-          <state>0</state>
+          <version>2</version>
+          <state>1</state>
         </option>
         <option>
           <name>Output description</name>
@@ -60,7 +60,7 @@
         </option>
         <option>
           <name>FPU</name>
-          <version>1</version>
+          <version>2</version>
           <state>0</state>
         </option>
         <option>
@@ -82,16 +82,12 @@
           <state>Use the normal configuration of the C/C++ runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
         </option>
         <option>
-          <name>RTConfigPath</name>
-          <state>$TOOLKIT_DIR$\INC\DLib_Config_Normal.h</state>
-        </option>
-        <option>
           <name>OGProductVersion</name>
           <state>5.50.6.52043</state>
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>5.50.0.51907</state>
+          <state>6.40.1.53794</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -103,7 +99,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state>M0516	Nuvoton M0516</state>
+          <state>STM32F103xB	ST STM32F103xB</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -135,13 +131,35 @@
           <version>0</version>
           <state>111101110010111111111000110111111111111111111111111110010111101111010101111111111111111111111111101111111011111001111011111011111111111111111</state>
         </option>
+        <option>
+          <name>RTConfigPath2</name>
+          <state>$TOOLKIT_DIR$\INC\c\DLib_Config_Normal.h</state>
+        </option>
+        <option>
+          <name>GFPUCoreSlave</name>
+          <version>20</version>
+          <state>38</state>
+        </option>
+        <option>
+          <name>GBECoreSlave</name>
+          <version>20</version>
+          <state>38</state>
+        </option>
+        <option>
+          <name>OGUseCmsis</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>OGUseCmsisDspLib</name>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>ICCARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>22</version>
+        <version>28</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -263,10 +281,6 @@
           <state>$FILE_BNAME$.o</state>
         </option>
         <option>
-          <name>CCLangSelect</name>
-          <state>0</state>
-        </option>
-        <option>
           <name>CCLibConfigHeader</name>
           <state>1</state>
         </option>
@@ -280,17 +294,13 @@
         </option>
         <option>
           <name>CCIncludePath2</name>
-          <state>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox</state>
+          <state>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox</state>
           <state>$PROJ_DIR$\..\..\..\lib</state>
-          <state>$PROJ_DIR$\..\..\..\..\..\..\Shining\Shining_NuMicro\libshining</state>
+          <state>$PROJ_DIR$\..\..\..\..\..\..\Shining\Cookie_STM32\libCookie</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>CCStdIncludePath</name>
-          <state>$TOOLKIT_DIR$\INC\</state>
         </option>
         <option>
           <name>CCCodeSection</name>
@@ -339,13 +349,57 @@
           <name>CCPosIndNoDynInit</name>
           <state>0</state>
         </option>
+        <option>
+          <name>IccLang</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IccCDialect</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccAllowVLA</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IccCppDialect</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccExceptions</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccRTTI</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccStaticDestr</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccCppInlineSemantics</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccCmsis</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccFloatSemantics</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCOptimizationNoSizeConstraints</name>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>AARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>7</version>
+        <version>8</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -490,10 +544,6 @@
           <state>0</state>
         </option>
         <option>
-          <name>AStdIncludes</name>
-          <state>$TOOLKIT_DIR$\INC\</state>
-        </option>
-        <option>
           <name>AUserIncludes</name>
           <state></state>
         </option>
@@ -562,7 +612,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>9</version>
+        <version>15</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -731,10 +781,6 @@
           <state>1</state>
         </option>
         <option>
-          <name>CrcAlgo</name>
-          <state>1</state>
-        </option>
-        <option>
           <name>CrcPoly</name>
           <state>0x11021</state>
         </option>
@@ -788,6 +834,64 @@
           <name>IlinkLogUnusedFragments</name>
           <state>0</state>
         </option>
+        <option>
+          <name>IlinkCrcReverseByteOrder</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkCrcUseAsInput</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IlinkOptInline</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkOptExceptionsAllow</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IlinkOptExceptionsForce</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkCmsis</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IlinkOptMergeDuplSections</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkOptUseVfe</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IlinkOptForceVfe</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>CrcAlgorithm</name>
+          <version>0</version>
+          <state>1</state>
+        </option>
+        <option>
+          <name>CrcUnitSize</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -827,7 +931,7 @@
       <name>General</name>
       <archiveVersion>3</archiveVersion>
       <data>
-        <version>17</version>
+        <version>21</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -844,8 +948,8 @@
         </option>
         <option>
           <name>Variant</name>
-          <version>16</version>
-          <state>34</state>
+          <version>20</version>
+          <state>0</state>
         </option>
         <option>
           <name>GEndianMode</name>
@@ -853,8 +957,8 @@
         </option>
         <option>
           <name>Input variant</name>
-          <version>1</version>
-          <state>0</state>
+          <version>3</version>
+          <state>1</state>
         </option>
         <option>
           <name>Input description</name>
@@ -862,8 +966,8 @@
         </option>
         <option>
           <name>Output variant</name>
-          <version>0</version>
-          <state>0</state>
+          <version>2</version>
+          <state>1</state>
         </option>
         <option>
           <name>Output description</name>
@@ -875,7 +979,7 @@
         </option>
         <option>
           <name>FPU</name>
-          <version>1</version>
+          <version>2</version>
           <state>0</state>
         </option>
         <option>
@@ -897,16 +1001,12 @@
           <state>Use the normal configuration of the C/C++ runtime library. No locale interface, C locale, no file descriptor support, no multibytes in printf and scanf, and no hex floats in strtod.</state>
         </option>
         <option>
-          <name>RTConfigPath</name>
-          <state>$TOOLKIT_DIR$\INC\DLib_Config_Normal.h</state>
-        </option>
-        <option>
           <name>OGProductVersion</name>
           <state>5.50.6.52043</state>
         </option>
         <option>
           <name>OGLastSavedByProductVersion</name>
-          <state>5.50.6.52043</state>
+          <state>6.40.1.53794</state>
         </option>
         <option>
           <name>GeneralEnableMisra</name>
@@ -918,7 +1018,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state>NUC140xE	Nuvoton NUC140xE</state>
+          <state>Default	None</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -950,13 +1050,35 @@
           <version>0</version>
           <state>111101110010111111111000110111111111111111111111111110010111101111010101111111111111111111111111101111111011111001111011111011111111111111111</state>
         </option>
+        <option>
+          <name>RTConfigPath2</name>
+          <state>$TOOLKIT_DIR$\INC\c\DLib_Config_Normal.h</state>
+        </option>
+        <option>
+          <name>GFPUCoreSlave</name>
+          <version>20</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>GBECoreSlave</name>
+          <version>20</version>
+          <state>0</state>
+        </option>
+        <option>
+          <name>OGUseCmsis</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>OGUseCmsisDspLib</name>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>ICCARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>22</version>
+        <version>28</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -1077,10 +1199,6 @@
           <state>$FILE_BNAME$.o</state>
         </option>
         <option>
-          <name>CCLangSelect</name>
-          <state>0</state>
-        </option>
-        <option>
           <name>CCLibConfigHeader</name>
           <state>1</state>
         </option>
@@ -1099,10 +1217,6 @@
         <option>
           <name>CCStdIncCheck</name>
           <state>0</state>
-        </option>
-        <option>
-          <name>CCStdIncludePath</name>
-          <state>$TOOLKIT_DIR$\INC\</state>
         </option>
         <option>
           <name>CCCodeSection</name>
@@ -1151,13 +1265,57 @@
           <name>CCPosIndNoDynInit</name>
           <state>0</state>
         </option>
+        <option>
+          <name>IccLang</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IccCDialect</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccAllowVLA</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IccCppDialect</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccExceptions</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccRTTI</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccStaticDestr</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccCppInlineSemantics</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccCmsis</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IccFloatSemantics</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>CCOptimizationNoSizeConstraints</name>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
       <name>AARM</name>
       <archiveVersion>2</archiveVersion>
       <data>
-        <version>7</version>
+        <version>8</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -1302,10 +1460,6 @@
           <state>0</state>
         </option>
         <option>
-          <name>AStdIncludes</name>
-          <state>$TOOLKIT_DIR$\INC\</state>
-        </option>
-        <option>
           <name>AUserIncludes</name>
           <state></state>
         </option>
@@ -1374,7 +1528,7 @@
       <name>ILINK</name>
       <archiveVersion>0</archiveVersion>
       <data>
-        <version>9</version>
+        <version>15</version>
         <wantNonLocal>1</wantNonLocal>
         <debug>1</debug>
         <option>
@@ -1543,10 +1697,6 @@
           <state>1</state>
         </option>
         <option>
-          <name>CrcAlgo</name>
-          <state>1</state>
-        </option>
-        <option>
           <name>CrcPoly</name>
           <state>0x11021</state>
         </option>
@@ -1600,6 +1750,64 @@
           <name>IlinkLogUnusedFragments</name>
           <state>0</state>
         </option>
+        <option>
+          <name>IlinkCrcReverseByteOrder</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkCrcUseAsInput</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IlinkOptInline</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkOptExceptionsAllow</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IlinkOptExceptionsForce</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkCmsis</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IlinkOptMergeDuplSections</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkOptUseVfe</name>
+          <state>1</state>
+        </option>
+        <option>
+          <name>IlinkOptForceVfe</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackAnalysisEnable</name>
+          <state>0</state>
+        </option>
+        <option>
+          <name>IlinkStackControlFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>IlinkStackCallGraphFile</name>
+          <state></state>
+        </option>
+        <option>
+          <name>CrcAlgorithm</name>
+          <version>0</version>
+          <state>1</state>
+        </option>
+        <option>
+          <name>CrcUnitSize</name>
+          <version>0</version>
+          <state>0</state>
+        </option>
       </data>
     </settings>
     <settings>
@@ -1632,12 +1840,12 @@
   <group>
     <name>CoX</name>
     <group>
-      <name>Co_Shining</name>
+      <name>Cookie_STM32</name>
       <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Shining\Shining_NuMicro\libshining\coshining.h</name>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Shining\Cookie_STM32\libCookie\cookie.h</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\..\..\..\..\Shining\Shining_NuMicro\libshining\coshining_cfg.h</name>
+        <name>$PROJ_DIR$\..\..\..\..\..\..\Shining\Cookie_STM32\libCookie\cookie_cfg.h</name>
       </file>
     </group>
     <group>
@@ -1645,121 +1853,133 @@
       <group>
         <name>inc</name>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xacmp.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xacmp.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xadc.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xadc.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xcore.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xcore.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xdebug.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xdebug.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xgpio.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xdma.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_acmp.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xgpio.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_adc.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_adc.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_gpio.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_config.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_i2c.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_dma.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_ints.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_gpio.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_memmap.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_i2c.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_nvic.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_ints.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_pwm.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_memmap.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_spi.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_nvic.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_sysctl.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_rtc.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_timer.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_spi.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_types.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_sysctl.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_uart.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_timer.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xhw_wdt.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_types.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xi2c.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_uart.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xpwm.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xhw_wdt.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xspi.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xi2c.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xsysctl.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xpwm.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xtimer.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xrtc.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xuart.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xspi.h</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xwdt.h</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xsysctl.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xtimer.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xuart.h</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xwdt.h</name>
         </file>
       </group>
       <group>
         <name>src</name>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xacmp.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xadc.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xadc.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xcore.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xcore.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xdebug.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xdebug.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xdma.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xgpio.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xgpio.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xi2c.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xi2c.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xpwm.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xpwm.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xspi.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xrtc.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xsysctl.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xspi.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xtimer.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xsysctl.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xuart.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xtimer.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_M051\libcox\xwdt.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xuart.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\..\..\..\..\..\CoX_Peripheral\CoX_Peripheral_STM32F1xx\libcox\xwdt.c</name>
         </file>
       </group>
     </group>
