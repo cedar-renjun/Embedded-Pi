@@ -31,7 +31,8 @@ int main()
     //
     xSysCtlPeripheralEnable(SHIELD_ADC);
 
-    xSPinTypeADC(ADC1, sA0);
+    xSPinTypeADC(ADC10, sA0);
+
 
     //
     // ADC Channel0 convert once, Software tirgger.

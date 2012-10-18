@@ -7,32 +7,32 @@
 //! \author CooCox
 //! \copy
 //!
-//! Copyright (c)  2011, CooCox 
+//! Copyright (c)  2011, CooCox
 //! All rights reserved.
-//! 
-//! Redistribution and use in source and binary forms, with or without 
-//! modification, are permitted provided that the following conditions 
-//! are met: 
-//! 
-//!     * Redistributions of source code must retain the above copyright 
-//! notice, this list of conditions and the following disclaimer. 
+//!
+//! Redistribution and use in source and binary forms, with or without
+//! modification, are permitted provided that the following conditions
+//! are met:
+//!
+//!     * Redistributions of source code must retain the above copyright
+//! notice, this list of conditions and the following disclaimer.
 //!     * Redistributions in binary form must reproduce the above copyright
 //! notice, this list of conditions and the following disclaimer in the
-//! documentation and/or other materials provided with the distribution. 
-//!     * Neither the name of the <ORGANIZATION> nor the names of its 
-//! contributors may be used to endorse or promote products derived 
-//! from this software without specific prior written permission. 
-//! 
+//! documentation and/or other materials provided with the distribution.
+//!     * Neither the name of the <ORGANIZATION> nor the names of its
+//! contributors may be used to endorse or promote products derived
+//! from this software without specific prior written permission.
+//!
 //! THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-//! AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+//! AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 //! IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-//! ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE 
-//! LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
-//! CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+//! ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+//! LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+//! CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
 //! SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-//! INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
-//! CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
-//! ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF 
+//! INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+//! CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+//! ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
 //! THE POSSIBILITY OF SUCH DAMAGE.
 //
 //*****************************************************************************
@@ -102,8 +102,8 @@ extern "C"
 //
 //! \addtogroup xADC_Ints xADC Interrupt Source
 //!
-//! They can be passed to xADCIntEnable(), 
-//! xADCIntDisable() as the ulIntFlags parameter to enable/disable the 
+//! They can be passed to xADCIntEnable(),
+//! xADCIntDisable() as the ulIntFlags parameter to enable/disable the
 //! corresponding interrupt.
 //!
 //! \section xADC_Ints_Sec_Port CoX Port Details
@@ -116,7 +116,7 @@ extern "C"
 //! |xADC_INT_END_CONVERSION |  Non-Mandatory |         Y        |
 //! |------------------------|----------------|------------------|
 //! \endverbatim
-//!    
+//!
 //! @{
 //
 //*****************************************************************************
@@ -143,12 +143,12 @@ extern "C"
 //!
 //! Users use the event ID in
 //! the interrupt callback function(xtEventCallback) as \b ulEvent parameter to
-//! determine what interrupt event occurs. 
+//! determine what interrupt event occurs.
 //!
 //! \section xADC_Events_Sec_Comp_Event 1. Comparators Events in CoX Standard
 //! In CoX ADC standard, the macro like \b xADC_EVENT_$COMPx$ show the comparator
 //! x interrupt event, x is 0, 1 and so on.
-//! Users use the \ref xADC_INT_COMP with xADCIntEnable() to enable all the 
+//! Users use the \ref xADC_INT_COMP with xADCIntEnable() to enable all the
 //! comparators interrupt. Then use \b xADC_EVENT_$COMPx$ in the interrupt
 //! callback function to determine what comparator match.
 //!
@@ -193,7 +193,7 @@ extern "C"
 //! \addtogroup xADC_Mode xADC Operation Mode
 //! \brief Values that show the ADC Operation Mode.
 //!
-//! They can be passed to 
+//! They can be passed to
 //! xADCConfigure() as the ulMode parameter to configure the ADC.
 //!
 //! \section xADC_Mode_Sec_Port CoX Port Details
@@ -213,7 +213,7 @@ extern "C"
 //! \brief Single cycle scan mode.
 //!
 //! A/D conversion will sample and convert the specified steps once in the
-//! sequence, from the first step to the end. Then the A/D converter 
+//! sequence, from the first step to the end. Then the A/D converter
 //! enters idle state.
 //
 #define xADC_MODE_SCAN_SINGLE_CYCLE                                           \
@@ -223,11 +223,11 @@ extern "C"
 //! \brief Continuous scan mode.
 //!
 //! A/D conversion will sample and convert the
-//! specified steps in the sequence, form the frist step to the end. and then 
-//! The A/D converter repeat sample and convert from the first step, 
+//! specified steps in the sequence, form the frist step to the end. and then
+//! The A/D converter repeat sample and convert from the first step,
 //! continuous.
 //!
-//! when the mode is set as continuous scan mode, the ADC will begin sample 
+//! when the mode is set as continuous scan mode, the ADC will begin sample
 //! after enable the ADC.
 //
 #define xADC_MODE_SCAN_CONTINUOUS                                             \
@@ -243,12 +243,12 @@ extern "C"
 //! \addtogroup xADC_Trigger_Source xADC Trigger Source
 //! \brief values that show the ADC trigger source.
 //!
-//! Can be passed to 
+//! Can be passed to
 //! xADCConfigure() as the ulTrigger parameter to configure the ADC.
 //!
 //! \section xADC_Trigger_Source_Sec_Ext 1. External Pin Event In CoX Standard
-//! CoX defines macros like \b xADC_TRIGGER_EXT_$ShortPin$, show a trigger   
-//! source on an external pin. \b $ShortPin$ is the GPIO short pin Name like 
+//! CoX defines macros like \b xADC_TRIGGER_EXT_$ShortPin$, show a trigger
+//! source on an external pin. \b $ShortPin$ is the GPIO short pin Name like
 //! \b PB2.
 //!
 //! \section xADC_Trigger_Source_Port 2. CoX Port Details
@@ -285,10 +285,10 @@ extern "C"
 //
 //! \addtogroup xADC_EXT_Trigger_Mode xADC External Tigger Source Mode
 //!
-//! Can be passed 
+//! Can be passed
 //! to the ADCConfigure() as the ulTrigger parameter, when the trigger source set
-//! as xADC_TRIGGER_EXT_$ShortPin$. The ulTrigger parameter is an OR vaule 
-//! with the \ref xADC_Trigger_Source. such as  
+//! as xADC_TRIGGER_EXT_$ShortPin$. The ulTrigger parameter is an OR vaule
+//! with the \ref xADC_Trigger_Source. such as
 //! \ref xADC_TRIGGER_EXT_PD2 | \ref xADC_TRIGGER_EXT_RISING_EDGE.
 //!
 //! \section xADC_EXT_Trigger_Mode_Sec_Port CoX Port Details
@@ -307,7 +307,7 @@ extern "C"
 //! |-----------------------------|----------------|------------------|
 //! |xADC_TRIGGER_EXT_BOTH_EDGE   |  Non-Mandatory |         N        |
 //! |-----------------------------|----------------|------------------|
-//! \endverbatim 
+//! \endverbatim
 //! @{
 //
 //*****************************************************************************
@@ -348,12 +348,12 @@ extern "C"
 //! \brief ADC step config values, such as single-end / difference, channel source.
 //!
 //! They are can be passed to the xADCStepConfigure() as the ulConfig parameter.
-//! 
+//!
 //! \section xADC_Step_Config_Sec_Divide xADC Step Config Divide
 //! The Step Config value is an logic OR type of the following config:
-//! - Channel source select, like \b xADC_CTL_$CHx$, such as \ref xADC_CTL_CH0.  
+//! - Channel source select, like \b xADC_CTL_$CHx$, such as \ref xADC_CTL_CH0.
 //! Or \ref xADC_CTL_TS to select the temperature sensor.
-//! - Comparator select to monitor the convertion value, like 
+//! - Comparator select to monitor the convertion value, like
 //! \b xADC_CTL_$CMPx$, such as \ref xADC_CTL_CMP0.
 //! - single-end / difference input mode. xADC_CTL_D shows difference input mode,
 //! and 0 shows single-end mode.
@@ -467,7 +467,7 @@ extern "C"
 //! |xADC Comp ID    |       CoX      |    STM32F1xx     |
 //! |----------------|----------------|------------------|
 //! |xADC_COMP_$x$   |  Non-Mandatory |       N          |
-//! |----------------|----------------|------------------| 
+//! |----------------|----------------|------------------|
 //! \endverbatim
 //! @{
 //
@@ -507,9 +507,9 @@ extern "C"
 //! |xADC_COMP_INT_MID        |  Non-Mandatory |          N         |
 //! |-------------------------|----------------|--------------------|
 //! |xADC_COMP_INT_HIGH       |  Non-Mandatory |          N         |
-//! +-------------------------+----------------+--------------------+ 
+//! +-------------------------+----------------+--------------------+
 //! \endverbatim
-//! 
+//!
 //! @{
 //
 //*****************************************************************************
@@ -575,13 +575,13 @@ extern "C"
 //
 //*****************************************************************************
 
-extern void xADCConfigure(unsigned long ulBase, unsigned long ulMode, 
+extern void xADCConfigure(unsigned long ulBase, unsigned long ulMode,
                           unsigned long ulTrigger);
 
 extern void xADCStepConfigure(unsigned long ulBase, unsigned long ulStep,
-                              unsigned long ulConfig);  
+                              unsigned long ulConfig);
 
-extern void xADCIntCallbackInit(unsigned long ulBase, 
+extern void xADCIntCallbackInit(unsigned long ulBase,
                                 xtEventCallback pfnCallback);
 
 //*****************************************************************************
@@ -656,7 +656,7 @@ extern void xADCIntDisable(unsigned long ulBase, unsigned long ulIntFlags);
 //! \param ulBase is the base address of the ADC module.
 //!
 //! This function triggers a processor-initiated sample sequence if the sample
-//! sequence trigger is configured to \b xADC_TRIGGER_PROCESSOR. 
+//! sequence trigger is configured to \b xADC_TRIGGER_PROCESSOR.
 //!
 //! \return None.
 //
@@ -686,7 +686,7 @@ extern void xADCIntDisable(unsigned long ulBase, unsigned long ulIntFlags);
 //
 //*****************************************************************************
 #define xADCCompRegionSet(ulBase, ulCompID, ulLowRef, ulHighRef)              0
-        
+
 
 //*****************************************************************************
 //
@@ -733,18 +733,18 @@ extern void xADCIntDisable(unsigned long ulBase, unsigned long ulIntFlags);
 //! \param pulBuffer is the address where the data is stored.
 //!
 //! This function copies data from the specified sample sequence  FIFO to
-//! a memory resident buffer.  The number of samples available in the 
+//! a memory resident buffer.  The number of samples available in the
 //! FIFO are copied into the buffer, which is assumed to be large enough to
 //! hold that many samples.  This will only return the samples that are
 //! presently available, which may not be the entire sample sequence if it is
 //! in the process of being executed.
 //!
-//! \return If some channel is converting ,return 0. 
+//! \return If some channel is converting ,return 0.
 //!         Else returns the number of samples copied to the buffer.
 //
 //*****************************************************************************
-#define xADCDataGet(ulBase)                                                   \
-        ADCDataRegularGet(ulBase)
+#define xADCDataGet(ulBase, pulBuffer)                                                   \
+        ADCDataRegularGet(ulBase, pulBuffer)
 
 //*****************************************************************************
 //
@@ -871,7 +871,7 @@ extern void xADCIntDisable(unsigned long ulBase, unsigned long ulIntFlags);
 
 //
 //! A/D Converter Operation Mode is Single conversion
-// 
+//
 #define ADC_OP_SINGLE           0x00000000
 
 //
@@ -887,12 +887,12 @@ extern void xADCIntDisable(unsigned long ulBase, unsigned long ulIntFlags);
 
 //
 //! A/D Converter Operation Mode: Continuous scan
-// 
+//
 #define ADC_OP_CONTINUOUS       0x00000002
 
 //
 //! A/D Converter Operation Mode is Scan conversion
-// 
+//
 #define ADC_OP_SCAN             0x00000100
 
 
@@ -911,7 +911,7 @@ extern void xADCIntDisable(unsigned long ulBase, unsigned long ulIntFlags);
 
 //
 //! Sample time selection: 1.5 cycles
-// 
+//
 #define ADC_SAMPTIME_1_5_CYCLE  0x00000000
 
 //
@@ -936,17 +936,17 @@ extern void xADCIntDisable(unsigned long ulBase, unsigned long ulIntFlags);
 
 //
 //! Sample time selection: 55.5 cycles
-// 
+//
 #define ADC_SAMPTIME_55_5_CYCLE 0x00000005
 
 //
 //! Sample time selection: 71.5 cycles
-// 
+//
 #define ADC_SAMPTIME_71_5_CYCLE 0x00000006
 
 //
 //! Sample time selection: 239.5 cycles
-// 
+//
 #define ADC_SAMPTIME_239_5_CYCLE                                              \
                                 0x00000007
 
@@ -1350,7 +1350,7 @@ extern unsigned long ADCDataInjectedGet(unsigned long ulBase, unsigned long ulCh
 extern void ADCMonitorSet(unsigned long ulBase, unsigned long ulHighThreshold,
                           unsigned long ulLowThreshold, unsigned long ulMoniChannel);
 
-extern void ADCSampLenSet(unsigned long ulBase, unsigned long ulChannel, 
+extern void ADCSampLenSet(unsigned long ulBase, unsigned long ulChannel,
                           unsigned long ulSampTime) ;
 extern void ADCMoniEnable(unsigned long ulBase, unsigned long ulComp);
 extern void ADCMoniDisable(unsigned long ulBase, unsigned long ulComp);
@@ -1360,7 +1360,7 @@ extern void ADCIntDisable(unsigned long ulBase, unsigned long ulIntFlags);
 extern unsigned long ADCIntStatus(unsigned long ulBase, unsigned long ulIntFlags);
 extern void ADCIntClear(unsigned long ulBase, unsigned long ulIntFlags);
 
-extern void ADCConverLenSet(unsigned long ulBase, unsigned long ulSeqRegLen, 
+extern void ADCConverLenSet(unsigned long ulBase, unsigned long ulSeqRegLen,
                             unsigned long ulSeqInjLen);
 extern void ADCSequenceIndexSet(unsigned long ulBase, unsigned long *pulRegChanNo,
                         unsigned long *pulInjectChanNo);
